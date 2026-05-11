@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+body {
+    --link-block-corner: 30px;
+    --link-block-bg-color: rgba(255, 255, 255, 1.000);
+    --link-block-font-color: #111111;
+    --link-block-shadow-color: #D867F4;
+    --link-block-border-color: #ffffff;
+    --link-thumbnail-radius: 50%;
+    --link-thumbnail-color: #111111;
+    --link-action-bg-color: #111111;
+    --link-action-font-color: #ffffff;
+    --link-social-color: #ffffff;
+}
+
+.bg div {
+    background-image: initial;
+    background-color: #5E1D1D;
+}
+
+.bg video {
+    display: none
+}
+
+.cover--bg {
+    --cover-bg-color: #5E1D1D;
+}
+
+body,
+body .center {
+    font-family: "Open Sans";
+    --link-font: "Open Sans";
+}
+
+body {
+    --link-title-color: #ffffff;
+    --link-desc-color: #ffffff
+}
+
+.cmpt-button-buttonLink .show-sortNum::before {
+    left: -30px;
+}
+
+.item-style::before,
+.item-style::after,
+.item-style .ctm-style::before,
+.item-style .ctm-style::after {
+    display: none;
+    background: transparent;
+    transform: none;
+    border: 0;
+}
+
+.item-style {
+    padding: 0;
+    margin: var(--link-block-button-margin) 0;
+    box-shadow: none;
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+    background: transparent;
+    clip-path: none
+}
+
+.item-style .ctm-style {
+    border: 0 !important;
+    background-color: transparent;
+    margin: 0;
+    background: transparent;
+    clip-path: none
+}
+
+.item-style:not(.button--expended):hover .ctm-style {
+    margin: 0;
+}
+
+.item-no-hover:hover .ctm-style {
+    margin: 0 !important
+}
+
+.item {
+    border-radius: var(--link-block-corner);
+    background-color: var(--link-block-bg-color) !important;
+    border: var(--link-block-border) solid var(--link-block-border-color) !important;
+}
+
+.item-style:not(.button--expended):hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    box-shadow: none;
+    transform: none
+}
+
+.item-style:not(.button--expended):hover .btn,
+.item-style:not(.button--expended):hover .btn-status,
+.item-style:not(.button--expended):hover .btn .btn-text,
+.item-style:not(.button--expended):hover .btn .link-text {
+    color: var(--link-block-border-color) !important
+}
+
+.item-style:not(.button--expended):hover .btn-icon span {
+    color: var(--link-block-border-color) !important;
+    border-color: var(--link-block-border-color) !important
+}
+
+.item-form::before,
+.item-form::after,
+.item-form .ctm-style::before,
+.item-form .ctm-style::after {
+    display: none;
+    background: transparent;
+    transform: none;
+    border: 0;
+}
+
+.item-form {
+    padding: 0;
+    box-shadow: none;
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+    background: transparent;
+    clip-path: none
+}
+
+.item-form .ctm-style {
+    border: 0 !important;
+    background: transparent;
+    clip-path: none
+}
+
+.item-form {
+    border-radius: var(--link-block-corner);
+    background-color: var(--link-block-bg-color) !important;
+    border: var(--link-block-border) solid var(--link-block-border-color) !important;
+}
+
+.item-form .form-control input,
+.item-form .form-control select,
+.item-form .form-control textarea {
+    border-radius: var(--link-block-corner);
+}
+
+.item-form .form-field-phone .dial-code {
+    border-radius: var(--link-block-corner) 0 0 var(--link-block-corner);
+}
+
+.item-form .form-field-phone input.data-field {
+    border-radius: 0 var(--link-block-corner) var(--link-block-corner) 0;
+}
+
+.item-form .form-button button {
+    border-radius: var(--form-tmpl-radius)
+}
+
+.item-video .video-box iframe,
+.item-video .video-box img {
+    border-radius: var(--link-block-corner)
+}
+
+.item-ytbsub,
+.item-twitter,
+.item-pins,
+.item-pins .embed-pins {
+    border-radius: var(--link-block-corner)
+}
+
+.item-support::before,
+.item-support::after,
+.item-support .ctm-style::before,
+.item-support .ctm-style::after {
+    display: none;
+    background: transparent;
+    transform: none;
+    border: 0;
+}
+
+.item-support {
+    padding: 0;
+    box-shadow: none;
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+    background: transparent;
+    clip-path: none
+}
+
+.item-support .ctm-style {
+    border: 0 !important;
+    background: transparent;
+    clip-path: none
+}
+
+.item-support {
+    border-radius: var(--link-block-corner);
+    background-color: var(--link-block-bg-color) !important;
+    border: var(--link-block-border) solid var(--link-block-border-color) !important;
+}
+
+.item-support .form-control input,
+.item-support .form-control select,
+.item-support .form-control textarea {
+    border-radius: var(--link-block-corner);
+}
+
+.item-support .support-action button {
+    border-radius: calc(var(--link-block-corner) * 0.8);
+}
+
+.biolink,
+.link-form,
+.edit-form,
+.bio-support,
+.bio-form,
+.bio-graphic,
+.bio-carousel,
+.bio-block {
+    padding: 0
+}
+
+.item-block::before,
+.item-block::after,
+.item-block .ctm-style::before,
+.item-block .ctm-style::after {
+    display: none;
+    background: transparent;
+    transform: none;
+    border: 0;
+}
+
+.item-block {
+    padding: 0;
+    margin: var(--link-block-margin) 0;
+    box-shadow: none;
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+    background: transparent;
+    clip-path: none
+}
+
+.item-block .ctm-style {
+    border: 0 !important;
+    margin: 0;
+    background: transparent;
+    clip-path: none
+}
+
+.item-block:hover .ctm-style {
+    margin: 0;
+}
+
+.item-block {
+    border-radius: var(--link-block-corner);
+    background-color: var(--link-block-bg-color) !important;
+    border: var(--link-block-border) solid var(--link-block-border-color) !important;
+}
+
+.item .item--bg,
+.item-block .item--bg {
+    display: none
+}
+
+.item .item--bg::before,
+.item-block .item--bg::before {
+    content: "";
+    display: none;
+}
+
+.item .item--bg::after,
+.item-block .item--bg::after {
+    content: "";
+    display: none;
+}
+
+.biolink {
+    --link-block-padding: 0px;
+}
+
+.item-graphic {
+    --link-block-padding: 0px;
+    --link-graphic-corner: calc(var(--link-block-corner) - var(--link-block-border) - var(--link-block-padding));
+    --link-block-radius: var(--link-graphic-corner);
+    --link-block-radius-link: var(--link-graphic-corner) 0 0 var(--link-graphic-corner);
+    --link-block-radius-link-2n: 0 var(--link-graphic-corner) var(--link-graphic-corner) 0;
+    --link-block-radius-link1: var(--link-block-radius-link);
+    --link-block-radius-link2: 0 var(--link-graphic-corner) var(--link-graphic-corner) 0;
+    --link-block-radius-image2: var(--link-graphic-corner) var(--link-graphic-corner) 0 0;
+}
+
+.item .btn,
+.item .btn .btn-text,
+.item .btn-text .link-text {
+    color: var(--link-block-font-color) !important;
+}
+
+.item .btn-icon img {
+    display: none;
+}
+
+.item .btn-icon span {
+    display: block;
+}
+
+.social_list li a img,
+.social_list li a span.borderColor,
+.social_list li a span.line,
+.social_list li a span.solid {
+    display: none;
+}
+
+.social_list li a span.solid {
+    display: block;
+}
+
+.item-divider .cmpt-divider-solid,
+.item-divider .cmpt-divider-lineBlank,
+.item-divider .cmpt-divider-lineDashed,
+.item-divider .cmpt-divider-dashed,
+.item-divider .cmpt-divider-lineCircle,
+.item-divider .cmpt-divider-linePentagram {
+    display: none
+}
+
+.item-divider .cmpt-divider-solid {
+    display: block
+}
+
+.item-divider [class^=cmpt-divider-] {
+    width: 100%
+}
